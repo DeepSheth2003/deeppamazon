@@ -1,0 +1,779 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    scrollbar-width: none;
+}
+
+.navbar{
+    height: 10vh;
+    background-color: rgba(19, 25, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Box 1*/
+
+.nav-logo{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(./Resources/amazon-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;    
+    width: 100%;
+}
+
+.border{
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.border:hover{
+    border: 1px solid white;
+}
+
+/*Box 2*/
+
+.nav-add{
+    height: 40px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+.add-icon{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Box 3*/
+
+.nav-search{
+    display: flex;
+    height: 40px;
+    width: 620px;
+    border-radius: 4px;
+}
+
+.search-sel{
+    background-color: rgba(230, 230, 230, 1.0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 50px;
+    text-align: center;
+}
+
+.search-inp{
+    font-size: 0.9rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.ser-icon{
+    background-color: rgba(241, 179, 100, 1.0);
+    width: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box 4 */
+
+.nav-login{
+    height: 40px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+.log-acc{
+    font-size: 1rem;
+}
+
+/*Box 5*/
+
+.orders{
+    height: 40px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.big-order{
+    font-size: 1rem;
+}
+
+/*Box 6*/
+
+.nav-cart{
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+/*** Lower Navbar ***/
+
+.mini-nav{
+    height: 35px;
+    background-color: rgba(35, 47, 62, 1.0);
+}
+
+.nav-items{
+    color: white;
+    font-size: 0.85rem;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.nav-items p{
+    margin: 15px;
+    cursor: pointer;
+}
+
+.mini-sel{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 0.85rem;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/** Hero section **/
+
+.hero-section{
+    background-image: url(./Resources/hero_image.jpg);
+    height: 320px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-msg{
+    background-color: white;
+    height: 40px;
+    width: 94%;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.hero-msg a{
+    text-decoration: none;
+    color: #027185;
+}
+
+/* box Area */
+
+.box-area{
+    background-color: #e2e7e6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box{
+    background-color: white;
+    height: 400px;
+    width: 23%;
+    padding: 20px 0 15px;
+    margin-top: 20px;
+}
+
+.box-img{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.box-content{
+    margin-left: 1rem;
+    cursor: default;
+    margin-right: 1rem;
+}
+
+.box-content p{
+    color: #027185;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 80px;
+}
+
+/** Footer **/
+
+.foot-login{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot-login-box{
+    height: 120px;
+    width: 96%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 25px;
+}
+.foot-login-box button{
+    cursor: pointer;
+    height: 30px;
+    width: 270px;
+    background-color: rgba(254,198,57);
+    font-weight: 600;
+    border: 1px solid rgb(255, 183, 0);
+    border-radius: 10px;
+}
+.foot-login-box a{
+    text-decoration: none;
+    color: #027185;
+}
+
+.mid-foot{
+    height: 550px;
+}
+
+.back-btn{
+    height: 9vh;
+    background-color: rgba(55, 71, 90, 1.0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+.back-btn:hover{
+    font-size: 1rem;
+}
+
+.infos{
+    height: 68%;
+    background-color: rgba(35, 47, 62, 1.0);
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.infos ul{
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 30px;
+    cursor: default;
+}
+li{
+    width: 190px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.infos ul li:hover{
+    font-size: 0.85rem;
+}
+
+.country{
+    height: 120px;
+    background-color: rgba(35, 47, 62, 1.0);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.foot-logo{
+    background-image: url(./Resources/amazon-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 90px;
+    margin-top: 10px;
+}
+
+.foot-sel{
+    height: 30px;
+    width: 170px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+.foot-sel option{
+    color: black;
+}
+
+
+/*Last Foot*/
+
+.last-foot{
+    background-color: rgba(19,26,34,1.0);
+}
+
+.last-foot-in{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 80px 130px 130px 110px 130px 130px 130px;
+    grid-template-rows: 80px 80px 80px 80px;
+    justify-content: space-evenly;
+    align-content: start;
+    row-gap: 25px;
+}
+
+.last-foot-in p{
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.inbox{
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+}
+
+.end{
+    color: rgba(255, 255, 255, 0.7);
+    height: 100px;
+    gap: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.end a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.end:p{
+    cursor: default;
+}
+
+.end i{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:480px){
+    
+    body{
+        width: 100vw;
+    }
+
+    .navbar{
+        height: 10vh;
+        width: 100vw;
+        background-color: rgba(19, 25, 33);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .nav-logo{
+        height: 50%;
+        width: 75px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-add{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 60px;
+        height: 40px;
+        font-size: 0.5rem;
+        cursor: pointer;
+    }
+    .add-icon p{
+        font-size: 0.7rem;
+        margin-left: 2px;
+    }
+    .add-icon{
+        font-size: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .nav-search{
+        display: flex;
+        height: 25px;
+        width: 200px;
+        border-radius: 4px;
+    }
+    
+    .search-sel{
+        background-color: rgba(230, 230, 230, 1.0);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        width: 30px;
+        text-align: center;
+        font-size: 0.45rem;
+    }
+    
+    .search-inp{
+        font-size: 0.5rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 5px;
+    }
+    
+    .ser-icon{
+        background-color: rgba(241, 179, 100, 1.0);
+        width: 45px;
+        cursor: pointer;
+        font-size: 13px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-login{
+        margin-left: 15px;
+        height: 40px;
+        width: 60px;
+        font-size: 0.5rem;
+        cursor: pointer;
+    }
+    .log-acc{
+        font-size: 0.7rem;
+    }
+    .orders{
+        display: none;
+    }
+    
+    .big-order{
+        font-size: 0.7rem;
+    }
+    .nav-cart{
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 0.6rem;
+    }
+
+    .mini-nav{
+        height: 30px;
+        width: 100vw;
+        background-color: rgba(35, 47, 62, 1.0);
+    }
+    
+    .nav-items{
+        color: white;
+        font-size: 0.5rem;
+        height: 30px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .nav-items p{
+        margin: 0;
+        cursor: pointer;
+    }
+    
+    .mini-sel{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 0.5rem;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .hero-section{
+        background-image: url(./Resources/hero_image.jpg);
+        height: 180px;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    .hero-msg{
+        background-color: white;
+        height: 23px;
+        width: 94%;
+        font-size: 0.35rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .hero-msg a{
+        text-decoration: none;
+        color: #027185;
+    }
+
+    .box-area{
+        background-color: #e2e7e6;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .box{
+        background-color: white;
+        height: 250px;
+        width: 45%;
+        padding: 20px 0 15px;
+        margin-top: 20px;
+    }
+    
+    .box-img{
+        height: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .box-content{
+        margin-left: 1rem;
+        cursor: default;
+        margin-right: 1rem;
+    }
+    
+    .box-content p{
+        color: #027185;
+        font-size: 0.7rem;
+        cursor: pointer;
+        width: 80px;
+    }
+    .box-content h3{
+        font-size: 0.7rem;
+    }
+
+    .foot-login{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .foot-login-box{
+        height: 120px;
+        width: 96%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 0.7rem;
+        font-weight: 500;
+        line-height: 25px;
+    }
+    .foot-login-box button{
+        cursor: pointer;
+        height: 25px;
+        width: 250px;
+        background-color: rgba(254,198,57);
+        font-weight: 600;
+        border: 1px solid rgb(255, 183, 0);
+        border-radius: 5px;
+    }
+    .foot-login-box a{
+        text-decoration: none;
+        color: #027185;
+    }
+
+    .mid-foot{
+        height: 730px;
+    }
+    
+    .back-btn{
+        height: 8vh;
+        background-color: rgba(55, 71, 90, 1.0);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: all 0.1s linear;
+    }
+    .back-btn:hover{
+        font-size: 0.9rem;
+    }
+    
+    .infos{
+        height: 78%;
+        width: 100%;
+        background-color: rgba(35, 47, 62, 1.0);
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto auto;
+        color: white;
+    }
+    
+    .infos ul{
+        margin-top: 30px;
+        margin-left: 15px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        line-height: 25px;
+        cursor: default;
+    }
+    li{
+        font-size: 0.7rem;
+        font-weight: 500;
+        list-style: none;
+        cursor: pointer;
+        transition: all 0.1s linear;
+    }
+    .infos ul li:hover{
+        font-size: 0.8rem;
+    }
+
+    .country{
+        height: 120px;
+        background-color: rgba(35, 47, 62, 1.0);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .foot-logo{
+        background-image: url(./Resources/amazon-white.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 25px;
+        width: 75px;
+        margin-top: 10px;
+    }
+    .country-info{
+        width: 70%;
+    }
+    .foot-sel{
+        height: 25px;
+        width: 32.22%;
+        font-size: 0.7rem;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background-color: transparent;
+        color: white;
+        outline: none;
+    }
+    .foot-sel option{
+        color: black;
+    }
+
+
+    .last-foot{
+        background-color: rgba(19,26,34,1.0);
+    }
+    
+    .last-foot-in{
+        height: 800px;
+        display: grid;
+        grid-template-columns: 60px 60px 60px 60px;
+        grid-template-rows: 80px 80px 80px 80px 80px 80px 80px;
+        justify-content: space-evenly;
+        align-content: start;
+        row-gap: 25px;
+    }
+    
+    .last-foot-in p{
+        font-size: 0.6rem;
+        font-weight: 100;
+    }
+    
+    .inbox{
+        color: rgba(255, 255, 255, 0.7);
+        position: relative;
+        top: 50px;
+        cursor: pointer;
+    }
+    
+    .end{
+        color: rgba(255, 255, 255, 0.7);
+        height: 100px;
+        width: 100vw;
+        gap: 10px;
+        font-size: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .end a{
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+    }
+    
+    .end:p{
+        cursor: default;
+    }
+    
+    .end i{
+        margin-left: 8px;
+        margin-right: 8px;
+        font-size: 18px;
+    }
+   
+}
